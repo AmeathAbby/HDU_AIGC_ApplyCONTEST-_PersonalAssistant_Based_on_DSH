@@ -1,0 +1,31 @@
+{
+  "mode": "console",
+  "database": "data/campus.sqlite3",
+  "harness_url": "",
+  "bot_id": "",
+  "target_id": "",
+  "digest_at": "07:30",
+  "poll_seconds": 5,
+  "sync_minutes": 60,
+  "weather_locations": [],
+  "campus_periods": {
+    "示例校区": {"1": ["08:00", "08:45"], "2": ["08:55", "09:40"]}
+  },
+  "timetables": [
+    {
+      "id": "sample",
+      "week1_monday": "2026-09-14",
+      "daily_title": "示例课表",
+      "reminder_title": "课前提醒",
+      "remind_minutes": 15,
+      "courses": [
+        {"title": "示例课程", "weekday": 1, "periods": [1, 2], "weeks": "2-16(双),17", "campus": "示例校区", "room": "示例教室"}
+      ]
+    }
+  ],
+  "sources": [
+    {"name": "杭电教务处 · 通知公告", "url": "https://jwc.hdu.edu.cn/13022/list.htm"},
+    {"name": "通信工程学院 · 教学动态", "url": "https://comm.hdu.edu.cn/jxdt/list.htm"},
+    {"name": "通信工程学院 · 公示公告", "url": "https://comm.hdu.edu.cn/gsggl/list.htm"}
+  ]
+}
